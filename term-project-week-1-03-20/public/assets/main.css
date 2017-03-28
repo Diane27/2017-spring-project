@@ -3,9 +3,13 @@
    float: none;
    vertical-align: middle;
 }
-
 .nav-title {
   display: inline-block;
   float: none;
   vertical-align: middle;
+}
+#yakker-input {
+  height: 25%;
+  vertical-align: top;
+  width: 50%;
 }

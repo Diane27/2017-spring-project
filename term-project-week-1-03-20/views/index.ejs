@@ -1,11 +1,9 @@
-<!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Yakker</title>
-  <link rel="stylesheet" href="skeleton.css">
-  <link rel="stylesheet" href="main.css">
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <link href="/assets/skeleton.css" rel="stylesheet" type="text/css">
+  <link href="/assets/main.css" rel="stylesheet" type="text/css">
   <script src="/assets/yakker.js"></script>
 </head>
 <body>
@@ -19,16 +17,20 @@
   </div>
   <hr class="divider" />
   <div class="container">
-    <div class="row">
-      <textarea id="yakker-input"></textarea>
-    </div>
-    <div class="row">
-      <button id="yakker-submit">Yak!</button>
-    </div>
+    <form>
+      <div class="row">
+        <input type='test' placeholder='Your message' id="yakker-input"></input>
+      </div>
+      <div class="row">
+        <input type='submit' id="yakker-submit" value='Yak!'></input>
+      </div>
+    </form>
     <div class="row">
       <ul id="yakker-list-container">
         <% messages.forEach(function(message) { %>
-          <li><%= message %></li>
+          <div class="row">
+            <li><%= message %></li>
+          </div>
         <% }); %>
       </ul>
     </div>
